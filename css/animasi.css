@@ -1,0 +1,1169 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+:root {
+  --Ukuran1-size: 12px;
+  --Ukuran2-size: 2.1em;
+  --Ukuran3-size: 14px;
+  --Ukuran4-size: 18px;
+
+  --UkuranMargin1st-size: 50%;
+  --UkuranMargin2nd-size: 40%;
+  --UkuranMargin3nd-size: 25%;
+}
+
+:root {
+  --Hitam-color: rgb(0, 0, 0);
+  --Abuabu-color: rgb(239, 239, 241);
+  --Putih-color: rgb(255, 255, 255);
+  --Merah-color: #ff0000;
+  --BiruBanner-color: #2b0486;
+}
+
+:root {
+  --Huruf-font: "Raleway", Arial, sans-serif;
+}
+
+/************* Watermak *************/
+
+/*======== Watermak About ========  */
+.About h1 {
+  position: absolute;
+  padding-top: 5%;
+  font-size: 12.5vh;
+  margin: 33vh 80%;
+  transform: rotate(270deg);
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/*======== Watermak Skill ========  */
+.Prestasi h5 {
+  position: absolute;
+  padding-top: 90vh;
+  font-size: 12.5vh;
+  margin: 0 132vh;
+  transform: rotate(270deg);
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/*======== Watermak PORTOFOLIO ========  */
+.PORTOFOLIO h1 {
+  position: absolute;
+  padding-top: 81vh;
+  font-size: 12.5vh;
+  margin: 0 126vh;
+  transform: rotate(270deg);
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/*======== Watermak Experience ========  */
+.Experience h1 {
+  position: absolute;
+  padding-top: 50vh;
+  font-size: 11.5vh;
+  margin: 21vh 141vh;
+  transform: rotate(270deg);
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/*======== Watermak Penghargaan ========  */
+.Penghargaan h1 {
+  position: absolute;
+  padding-top: 50vh;
+  font-size: 11.1vh;
+  margin: 12vh 138vh;
+  transform: rotate(270deg);
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------  Pembatas Bagian --------- */
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 100px;
+  z-index: 1000;
+  transition: 0.6s;
+}
+
+/* Bag. Efek animasi Bar header  */
+header.sticky {
+  padding: 8px 100px;
+  color: transparent;
+  background-color: #e3e3e3;
+  background-image: linear-gradient(180deg, #e3e3e3 31%, #ffffff 91%, #000000 101%);
+  border-bottom: 1px solid(0, 0, 0, 0.1);
+}
+
+/* Bag. LOGO */
+header .logo {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  font-family: "Lobster";
+}
+
+/* Bag. Menu */
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bag. garis bawah menu */
+header ul li {
+  list-style: none;
+}
+
+/* Bag. Tombol-tombol Menu */
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+header ul li a::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: black;
+  top: 110%;
+  left: 0;
+  transition: 0.4s;
+}
+
+header ul li:hover a::before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+/* Bag. Banner Abed Sitompul */
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/Background/Office.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 40px;
+  font-family: var(--Huruf-font);
+}
+
+.banner .coverbanner {
+  margin: auto 0 auto 0;
+  text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+}
+
+.banner .coverbanner .teks-1 {
+  font-size: 35px;
+}
+
+.banner .coverbanner .teks-2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.banner .coverbanner .teks-3 {
+  font-size: 35px;
+}
+
+/* Bagian Animasi bannerkonten */
+.banner .coverbanner .bannerkonten .teks-3 span {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: bold;
+  left: 60vh;
+  position: absolute;
+  overflow: hidden;
+  animation: animasiBanner 8s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animasiBanner {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  2% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.banner .coverbanner .bannerkonten .teks-3 span:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.banner .coverbanner .bannerkonten .teks-3 span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.banner .coverbanner .bannerkonten .teks-3 span:nth-child(3) {
+  animation-delay: 5s;
+}
+
+/**** Akhiran Animasi bannerkonten */
+
+
+
+/**********  Bag. Experience  **********/
+#Sambungan {
+  display: none;
+  font-size: 14px;
+}
+
+#BtnSambung {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#BtnSambung:hover {
+  color: red
+}
+
+.Experience {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.Experience .ExperImg {
+  position: absolute;
+  background: url(../img/Background/ImgGdng.jpg);
+  background-size: cover;
+  top: 0;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+
+}
+
+
+.Experience .ExperImg::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#E3E3E3,
+      rgba(245, 245, 245, 0.4),
+      var(--Putih-color));
+}
+
+/* rgba(236, 235, 237, 0.7);*/
+.CoverExper {
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+}
+
+/*  GARIS LURUS */
+.CoverExper::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  left: 50%;
+  width: 2.5px;
+  height: 95%;
+  background: rgb(117, 117, 117);
+}
+
+.CoverExper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.CoverExper ul li {
+  line-height: normal;
+  position: relative;
+  width: 50%;
+  padding: 1px 10px;
+  box-sizing: border-box;
+}
+
+.CoverExper ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.CoverExper ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+/*  */
+.KontenExper {
+  letter-spacing: 1px;
+  line-height: 22px;
+  background: rgba(112, 112, 112, 0.1);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.CoverExper ul li {
+  padding-top: 1%;
+}
+
+.KontenExper h3:nth-child(2) {
+  font-size: 15px;
+}
+
+.KontenExper span {
+  font-size: 14px;
+  padding-top: 145px;
+}
+
+.CoverExper .KontenExper #rata {
+  list-style: none;
+}
+
+.KontenExper #rata #TeksBold {
+  font-weight: bold;
+}
+
+.CoverExper ul li:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgb(15, 127, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+  margin-top: 2%;
+}
+
+.CoverExper ul li:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgb(15, 127, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+  margin-top: 2%;
+}
+
+.CoverExper ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.CoverExper ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.CoverExper ul li .time h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.CoverExper ul li:nth-child(odd) .WaktuExper {
+  position: absolute;
+  top: 5px;
+  right: -180px;
+  margin: 0;
+  padding: 8px 15px;
+  background-color: rgb(207, 206, 206, 0.5);
+  border-radius: 15px;
+  margin-top: 2%;
+  font-size: 14px;
+}
+
+.CoverExper ul li:nth-child(even) .WaktuExper {
+  position: absolute;
+  top: 12px;
+  left: -180px;
+  margin: 0;
+  padding: 8px 15px;
+  background-color: rgb(207, 206, 206, 0.5);
+  border-radius: 15px;
+  margin-top: 2%;
+  font-size: 14px;
+}
+
+/* ---------  Pembatas Bagian --------- */
+
+/********** Bagian ABOUT  **********/
+.About {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 4%;
+  background: #E3E3E3;
+}
+
+.HeadContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--- Kolom Abt-Icon  **********/
+.Abt-Icon {
+  float: left;
+  width: 6%;
+  padding-top: 18%;
+}
+
+.Abt-CovIcon {
+
+  position: absolute;
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+  z-index: 2;
+  overflow: hidden;
+  width: 79px;
+}
+
+.Abt-CovIcon a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  margin: 10%;
+  color: white;
+  font-size: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover {
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.Abt-CovIcon a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
+}
+
+
+
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/*--- Kolom AbtTentang **********/
+.AbtTentang {
+  float: left;
+  width: 38%;
+  height: 300px;
+  padding-top: 8%;
+  transition: all 0.3s ease-out;
+}
+
+
+.AbtTentang-Cover {
+  width: 215px;
+  height: 213px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.01);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.AbtTentang-Cover:hover {
+  width: 370px;
+  height: 490px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  margin-top: calc(-15% + 10px);
+  transition: all 0.2s ease-in-out;
+}
+
+.AbtTentang-Konteks img {
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  height: 190px;
+  width: 190px;
+  border: 1px solid #fff;
+  object-fit: cover;
+  margin: 12px auto;
+  transition: all 0.3s ease;
+}
+
+.AbtTentang-Konteks .AbtTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.AbtTentang-Konteks .Abtplace {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
+  width: 370px;
+  height: 490px;
+  margin: 0px auto;
+  border-radius: 0px;
+}
+
+.AbtContent p {
+  font-weight: bold;
+  font-size: var(--Ukuran4-size);
+}
+
+.AbtContent span {
+  font-size: var(--Ukuran3-size);
+}
+
+.panduan {
+  font-weight: bold;
+  padding-left: 38%;
+  padding-top: 2%;
+  font-size: 20px;
+}
+
+.panduan p {
+  padding-top: 1.5%;
+  font-size: 54%;
+  padding-left: 21%;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.AbtTentang-Cover:hover+.panduan {
+  display: none;
+}
+
+.AbtTentang-Konteks img.active+.panduan {
+  display: none;
+}
+
+/*--- Kolom AbtProfl **********/
+.AbtProfilBody {
+  float: left;
+  width: 55.99%;
+  height: 300px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3%;
+
+}
+
+.AbtContainer {
+  position: relative;
+  width: 440px;
+  height: 400px;
+
+}
+
+.AbtContainer .thumb {
+  position: absolute;
+  top: 57%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+/* COVER MENU */
+.AbtContainer .thumb li {
+  position: relative;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+  width: 100px;
+  height: 70px;
+  margin: 25px -15px;
+  border-radius: 15%;
+  background-color: rgba(216, 216, 216, 0.8);
+  cursor: pointer;
+}
+
+/* ICON nya */
+.thumb .iconify {
+  font-size: 30px;
+
+}
+
+.thumb li::after {
+  filter: blur(5px);
+}
+
+.thumb li:hover::before,
+.thumb li:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000,
+      #00f0f0, #00ff00, #0000ff, #f00f0f);
+  border-radius: 15%;
+  background-size: 400%;
+  transition: 0.5s;
+  z-index: -1;
+  animation: animasiAbout 20s linear infinite;
+  color: blue;
+}
+
+.thumb li:hover {
+  color: blue
+}
+
+
+@keyframes animasiAbout {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* TEKS MENU */
+.thumb p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* COVER PARAGRAF*/
+.AbtContainer .target_box {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 0;
+  width: 500px;
+  height: 113%;
+  background-color: rgba(0, 0, 0, 0.02);
+
+  border: 1px solid rgba(230, 230, 230, 0.25);
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5%;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 130px;
+  line-height: 1.5em;
+
+}
+
+/** div1 **/
+#div1 {
+  word-spacing: 3px;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+/** div2  **/
+#div2 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 15%;
+  height: 100px;
+}
+
+#div2 .columndiv2 .iconify {
+  font-size: 50px;
+}
+
+.columndiv2 {
+  float: left;
+  width: 33%;
+}
+
+#div2:after,
+#div3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** div3  **/
+#div3 {
+  margin-top: -25%;
+}
+
+.columndiv3 {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.columndiv3 h2 {
+  padding-bottom: 8%;
+  text-align: center;
+}
+
+.CoverListSkill {
+  margin: 0;
+  padding: 0;
+}
+
+.CoverListSkill li {
+  padding: 2px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.9);
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+/** div4  **/
+#div4 {
+  line-height: 1.5em;
+
+}
+
+#div4 ul {
+  padding-left: 9.5%;
+  list-style: none;
+}
+
+
+#div4 ol.c {
+  padding-left: 10%;
+  list-style-type: square;
+}
+
+/*  Dll About    */
+.targetDiv {
+  display: none;
+}
+
+.thumb li.active {
+  background: rgb(0, 0, 0);
+  color: yellow;
+}
+
+
+
+/**********  PEMBATAS **********/
+/**********  Bag. Penghargaan  **********/
+
+.Penghargaan {
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********  PEMBATAS  **********/
+/**********  CSS DLL  **********/
+/* MENU ABOUT YANG TERPILIH */
+.terpilih {
+  color: rgb(34, 0, 255);
+}
+
+.targetss {
+  position: absolute;
+  margin: 75% 4%;
+  font-size: 15px;
+  width: 80%;
+  display: none;
+  font-weight: bold;
+}
+
+.targetss p:nth-last-child(2) {
+  float: right;
+  margin-top: -25px;
+}
+
+.skill_levelss {
+  margin-top: 1%;
+  background: blue;
+  width: 100%;
+  height: 5px;
+}
+
+/* ---------  Pembatas Bagian --------- */
+/********** Bag PORTOFOLIO **********/
+.PORTOFOLIO {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 3.5%;
+
+}
+
+/* PORT 1 */
+.Col-PortA {
+  width: 100%;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.Col-PortB {
+  position: absolute;
+  margin: 0 68%;
+  padding: 10%;
+  width: 31%;
+  height: 480px;
+  background-color: transparent;
+}
+
+#sc1nd img {
+  width: 68%;
+  height: 100%;
+}
+
+
+
+/* Gambar slide */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+
+}
+
+/*  SLIDE IMAGE */
+.ColSLide2 {
+  width: 100%;
+  height: 98px;
+}
+
+.RowPort:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.swiper-container {
+  width: 50%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sc2nd {
+  width: 50%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cover Slide gambar */
+#sc2nd .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-size: cover;
+  background-position: left;
+  margin-top: 0.9%;
+  height: 90%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(190, 190, 190, 0.3);
+  right: 10px;
+  padding: 10px;
+  color: rgb(131, 131, 131) !important;
+  size: 50px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgb(0, 0, 0) !important;
+  background-size: 60px !important;
+  line-height: 5em;
+}
+
+.swiper-button-next {
+  margin-right: 32%;
+}
+
+/* Cover image utama */
+.mySwiper2 {
+  height: 100%;
+  width: 90%;
+}
+
+.mySwiper2 img {
+  width: 100%;
+}
+
+/* Cover image slide */
+#sc2nd .mySwiper {
+  height: 5%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+#sc1nd .numbertext {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 15px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(190, 190, 190, 0.3);
+}
+
+/* ---------  Pembatas Bagian --------- */
+/* Bagian PRESTASI  */
+.Prestasi {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 5) 44%, rgba(255, 255, 255, 1) 100%);
+}
+
+.Cov1st_Prestasi {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.One1st {
+  float: left;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 170px 5%;
+}
+
+.One2st {
+  float: left;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 170px 2% 0 0;
+}
+
+.pre_cover .pre_card {
+  position: relative;
+  height: 300px;
+  background-color: rgba(94, 94, 94, 0.05);
+  display: flex;
+  width: 75%;
+  border-radius: 20px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+}
+
+.pre_cover .pre_card .imgbox {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: black;
+  backdrop-filter: blur(390px);
+  height: calc(100% - 14px);
+  width: calc(100% - 14px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 0.1s ease-in-out;
+}
+
+.pre_cover .pre_card .imgbox .fa {
+  position: absolute;
+  margin: -11% 0 0 0;
+  font-size: 60px;
+  max-width: 100px;
+  filter: invert(1);
+  transition: 0.1s ease-in-out;
+}
+
+.pre_cover .pre_card:hover {
+  border-top-right-radius: 30%;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.pre_cover .pre_card:hover .imgbox {
+  height: 100px;
+  width: 100px;
+  left: -71px;
+  top: calc(50% - 50px);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(121, 121, 121, 0.06);
+  border-radius: 11px;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.pre_cover .pre_card:hover .imgbox .fa {
+  margin: 0;
+  padding: 0;
+}
+
+.pre_cover .pre_card .imgbox .iconify {
+  max-width: 150px;
+}
+
+.pre_cover .pre_card .imgbox .tit-1st,
+.pre_cover .pre_card .imgbox .tit-2nd,
+.pre_cover .pre_card .imgbox .tit1st-1st,
+.pre_cover .pre_card .imgbox .tit2nd-2nd {
+  position: absolute;
+  margin: 15% 0 0 0;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  transition: none;
+}
+
+.pre_cover .pre_card:hover .imgbox .tit-1st,
+.pre_cover .pre_card:hover .imgbox .tit-2nd,
+.pre_cover .pre_card:hover .imgbox .tit1st-1st,
+.pre_cover .pre_card:hover .imgbox .tit2nd-2nd {
+  display: none;
+  transition: none;
+}
+
+.pre_cover .pre_card .imgbox .tit-2nd,
+.pre_cover .pre_card .imgbox .tit2nd-2nd {
+  position: absolute;
+  margin: 30% 0 0 0;
+}
+
+.pre_cover .pre_card .pre_konten {
+  position: absolute;
+  right: 0;
+  left: 8%;
+  width: calc(50%-75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre_cover .pre_card .pre_konten h3 {
+  color: black;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.pre_cover .pre_card .pre_konten ol {
+  margin-top: 10px;
+}
+
+
+
+
+/* aaaaaaaaaaaa */
