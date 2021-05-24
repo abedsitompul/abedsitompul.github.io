@@ -33,28 +33,6 @@ $(document).ready(function () {
 
 });
 
-/* SLide image */
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 10,
-  effect: "fade",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
-
-
 /* Read More */
 function FungsiReadMore() {
   var TTersambung = document.getElementById("TeksPutus");
@@ -83,3 +61,28 @@ $("figure").mouseleave(function () {
   $(this).removeClass("hover");
 });
 /* Akhiran Sticky */
+
+
+
+
+/* SLide image */
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  effect: "fade",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+

@@ -10,13 +10,7 @@
 
 :root {
   --Ukuran1-size: 12px;
-  --Ukuran2-size: 2.1em;
-  --Ukuran3-size: 14px;
-  --Ukuran4-size: 18px;
-
-  --UkuranMargin1st-size: 50%;
-  --UkuranMargin2nd-size: 40%;
-  --UkuranMargin3nd-size: 25%;
+  --Ukuran2-size: 14px;
 }
 
 :root {
@@ -49,7 +43,7 @@
   position: absolute;
   padding-top: 90vh;
   font-size: 12.5vh;
-  margin: 0 132vh;
+  margin: 0 128vh;
   transform: rotate(270deg);
   color: transparent;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -60,7 +54,7 @@
   position: absolute;
   padding-top: 81vh;
   font-size: 12.5vh;
-  margin: 0 126vh;
+  margin: 0 123vh;
   transform: rotate(270deg);
   color: transparent;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -71,7 +65,7 @@
   position: absolute;
   padding-top: 50vh;
   font-size: 11.5vh;
-  margin: 21vh 141vh;
+  margin: 21vh 138vh;
   transform: rotate(270deg);
   color: transparent;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -83,7 +77,7 @@
   position: absolute;
   padding-top: 50vh;
   font-size: 11.1vh;
-  margin: 12vh 138vh;
+  margin: 0 138vh;
   transform: rotate(270deg);
   color: transparent;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -354,7 +348,7 @@ header ul li:hover a::before {
   line-height: 22px;
   background: rgba(112, 112, 112, 0.1);
   padding: 10px;
-  font-size: 14px;
+  font-size: var(--Ukuran2-size);
 }
 
 .CoverExper ul li {
@@ -366,7 +360,7 @@ header ul li:hover a::before {
 }
 
 .KontenExper span {
-  font-size: 14px;
+  font-size: var(--Ukuran2-size);
   padding-top: 145px;
 }
 
@@ -430,19 +424,19 @@ header ul li:hover a::before {
   background-color: rgb(207, 206, 206, 0.5);
   border-radius: 15px;
   margin-top: 2%;
-  font-size: 14px;
+  font-size: var(--Ukuran2-size);
 }
 
 .CoverExper ul li:nth-child(even) .WaktuExper {
   position: absolute;
-  top: 12px;
+  top: var(--Ukuran1-size);
   left: -180px;
   margin: 0;
   padding: 8px 15px;
   background-color: rgb(207, 206, 206, 0.5);
   border-radius: 15px;
   margin-top: 2%;
-  font-size: 14px;
+  font-size: var(--Ukuran2-size);
 }
 
 /* ---------  Pembatas Bagian --------- */
@@ -591,11 +585,11 @@ header ul li:hover a::before {
 
 .AbtContent p {
   font-weight: bold;
-  font-size: var(--Ukuran4-size);
+  font-size: var(--Ukuran3-size);
 }
 
 .AbtContent span {
-  font-size: var(--Ukuran3-size);
+  font-size: var(--Ukuran2-size);
 }
 
 .panduan {
@@ -652,7 +646,7 @@ header ul li:hover a::before {
   list-style: none;
   justify-content: center;
   text-align: center;
-  padding: 14px;
+  padding: var(--Ukuran2-size);
   width: 100px;
   height: 70px;
   margin: 25px -15px;
@@ -824,194 +818,6 @@ header ul li:hover a::before {
   color: yellow;
 }
 
-
-
-/**********  PEMBATAS **********/
-/**********  Bag. Penghargaan  **********/
-
-.Penghargaan {
-  height: 100vh;
-  width: 100%;
-  padding-top: 5%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-/**********  PEMBATAS  **********/
-/**********  CSS DLL  **********/
-/* MENU ABOUT YANG TERPILIH */
-.terpilih {
-  color: rgb(34, 0, 255);
-}
-
-.targetss {
-  position: absolute;
-  margin: 75% 4%;
-  font-size: 15px;
-  width: 80%;
-  display: none;
-  font-weight: bold;
-}
-
-.targetss p:nth-last-child(2) {
-  float: right;
-  margin-top: -25px;
-}
-
-.skill_levelss {
-  margin-top: 1%;
-  background: blue;
-  width: 100%;
-  height: 5px;
-}
-
-/* ---------  Pembatas Bagian --------- */
-/********** Bag PORTOFOLIO **********/
-.PORTOFOLIO {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-  padding-top: 3.5%;
-
-}
-
-/* PORT 1 */
-.Col-PortA {
-  width: 100%;
-  height: 480px;
-  margin: 0;
-  padding: 0;
-
-}
-
-.Col-PortB {
-  position: absolute;
-  margin: 0 68%;
-  padding: 10%;
-  width: 31%;
-  height: 480px;
-  background-color: transparent;
-}
-
-#sc1nd img {
-  width: 68%;
-  height: 100%;
-}
-
-
-
-/* Gambar slide */
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-
-}
-
-/*  SLIDE IMAGE */
-.ColSLide2 {
-  width: 100%;
-  height: 98px;
-}
-
-.RowPort:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.swiper-container {
-  width: 50%;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#sc2nd {
-  width: 50%;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Cover Slide gambar */
-#sc2nd .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: left;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background-size: cover;
-  background-position: left;
-  margin-top: 0.9%;
-  height: 90%;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: rgba(190, 190, 190, 0.3);
-  right: 10px;
-  padding: 10px;
-  color: rgb(131, 131, 131) !important;
-  size: 50px;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: rgb(0, 0, 0) !important;
-  background-size: 60px !important;
-  line-height: 5em;
-}
-
-.swiper-button-next {
-  margin-right: 32%;
-}
-
-/* Cover image utama */
-.mySwiper2 {
-  height: 100%;
-  width: 90%;
-}
-
-.mySwiper2 img {
-  width: 100%;
-}
-
-/* Cover image slide */
-#sc2nd .mySwiper {
-  height: 5%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.2;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-#sc1nd .numbertext {
-  color: #ff0000;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 15px;
-  position: absolute;
-  top: 0;
-  background-color: rgba(190, 190, 190, 0.3);
-}
-
 /* ---------  Pembatas Bagian --------- */
 /* Bagian PRESTASI  */
 .Prestasi {
@@ -1165,5 +971,53 @@ header ul li:hover a::before {
 
 
 
+/**********  PEMBATAS **********/
+/**********  Bag. Penghargaan  **********/
 
-/* aaaaaaaaaaaa */
+.Penghargaan {
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********  PEMBATAS  **********/
+/**********  CSS DLL  **********/
+/* MENU ABOUT YANG TERPILIH */
+.terpilih {
+  color: rgb(34, 0, 255);
+}
+
+.targetss {
+  position: absolute;
+  margin: 75% 4%;
+  font-size: 15px;
+  width: 80%;
+  display: none;
+  font-weight: bold;
+}
+
+.targetss p:nth-last-child(2) {
+  float: right;
+  margin-top: -25px;
+}
+
+.skill_levelss {
+  margin-top: 1%;
+  background: blue;
+  width: 100%;
+  height: 5px;
+}
+
+/* ---------  Pembatas Bagian --------- */
+/********** Bag PORTOFOLIO **********/
+.PORTOFOLIO {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 3.5%;
+
+}
