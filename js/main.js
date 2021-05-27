@@ -26,12 +26,19 @@ $(document).ready(function () {
   $(".SkillSs").hover(function (e) {
     $(".targetss").hide();
     $("#ss" + $(this).attr("target")).show();
+    // / batas / 
     e.preventDefault();
     $('.SkillSs').removeClass('terpilih');
     $(this).addClass('terpilih');
   });
 
+  
+  $(".mySwiper2 .swiper-slide").click(function(){
+      $(".targetrp").hide();
+    $("#rp" + $(this).attr("target")).show(); 
+  });
 });
+
 
 /* Read More */
 function FungsiReadMore() {
@@ -56,14 +63,10 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
-
 $("figure").mouseleave(function () {
   $(this).removeClass("hover");
 });
-/* Akhiran Sticky */
-
-
-
+/* Akhiran Sticky  swiper-button-prev*/
 
 /* SLide image */
 var swiper = new Swiper(".mySwiper", {
@@ -79,10 +82,12 @@ var swiper2 = new Swiper(".mySwiper2", {
   effect: "fade",
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev",    
   },
+  
   thumbs: {
     swiper: swiper,
   },
 });
+
 

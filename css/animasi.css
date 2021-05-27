@@ -35,7 +35,7 @@
   margin: 33vh 80%;
   transform: rotate(270deg);
   color: transparent;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
 }
 
 /*======== Watermak Skill ========  */
@@ -46,18 +46,18 @@
   margin: 0 128vh;
   transform: rotate(270deg);
   color: transparent;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
 }
 
 /*======== Watermak PORTOFOLIO ========  */
 .PORTOFOLIO h1 {
   position: absolute;
-  padding-top: 81vh;
+  padding-top: 73vh;
   font-size: 12.5vh;
-  margin: 0 123vh;
+  margin: 0 127vh;
   transform: rotate(270deg);
   color: transparent;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
 }
 
 /*======== Watermak Experience ========  */
@@ -68,20 +68,10 @@
   margin: 21vh 138vh;
   transform: rotate(270deg);
   color: transparent;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
   z-index: 1;
 }
 
-/*======== Watermak Penghargaan ========  */
-.Penghargaan h1 {
-  position: absolute;
-  padding-top: 50vh;
-  font-size: 11.1vh;
-  margin: 0 138vh;
-  transform: rotate(270deg);
-  color: transparent;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
 
 /* ---------  Pembatas Bagian --------- */
 
@@ -102,18 +92,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 100px;
+  padding: 6px 100px;
   z-index: 1000;
   transition: 0.6s;
 }
 
 /* Bag. Efek animasi Bar header  */
 header.sticky {
-  padding: 8px 100px;
   color: transparent;
   background-color: #e3e3e3;
-  background-image: linear-gradient(180deg, #e3e3e3 31%, #ffffff 91%, #000000 101%);
+  background-image: linear-gradient(180deg, #D2D0D3 10%, #ffffff 91%, #000000 131%);
   border-bottom: 1px solid(0, 0, 0, 0.1);
+  transition: 0.6s;
 }
 
 /* Bag. LOGO */
@@ -293,7 +283,7 @@ header ul li:hover a::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(#E3E3E3,
+  background: linear-gradient(#D2D0D3,
       rgba(245, 245, 245, 0.4),
       var(--Putih-color));
 }
@@ -379,9 +369,9 @@ header ul li:hover a::before {
   right: -6px;
   width: 10px;
   height: 10px;
-  background: rgb(15, 127, 255);
+  background: rgb(165, 165, 165);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px white;
   margin-top: 2%;
 }
 
@@ -392,9 +382,9 @@ header ul li:hover a::before {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: rgb(15, 127, 255);
+  background: rgb(165, 165, 165);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px white;
   margin-top: 2%;
 }
 
@@ -448,7 +438,7 @@ header ul li:hover a::before {
   height: 100vh;
   box-sizing: border-box;
   padding-top: 4%;
-  background: #E3E3E3;
+  background: rgb(210, 208, 211);
 }
 
 .HeadContainer:after {
@@ -465,7 +455,6 @@ header ul li:hover a::before {
 }
 
 .Abt-CovIcon {
-
   position: absolute;
   -webkit-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
@@ -510,9 +499,6 @@ header ul li:hover a::before {
   transform: skewX(45deg) translateX(-150px);
 }
 
-
-
-
 .facebook {
   background: #3b5998;
   color: white;
@@ -532,14 +518,13 @@ header ul li:hover a::before {
   transition: all 0.3s ease-out;
 }
 
-
 .AbtTentang-Cover {
   width: 215px;
   height: 213px;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
@@ -549,6 +534,7 @@ header ul li:hover a::before {
   width: 370px;
   height: 490px;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.658);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: calc(-15% + 10px);
   transition: all 0.2s ease-in-out;
@@ -623,7 +609,6 @@ header ul li:hover a::before {
   box-sizing: border-box;
   margin: 0;
   padding: 3%;
-
 }
 
 .AbtContainer {
@@ -651,7 +636,7 @@ header ul li:hover a::before {
   height: 70px;
   margin: 25px -15px;
   border-radius: 15%;
-  background-color: rgba(216, 216, 216, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
@@ -674,11 +659,11 @@ header ul li:hover a::before {
   width: 101%;
   height: 101%;
   transform: scale(1.02);
-  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000,
-      #00f0f0, #00ff00, #0000ff, #f00f0f);
+  background: linear-gradient(45deg, #0f43f09d, #00f0f0, #0f43f09d,
+      #00f0f0, #0f43f09d);
   border-radius: 15%;
   background-size: 400%;
-  transition: 0.5s;
+  transition: 1s;
   z-index: -1;
   animation: animasiAbout 20s linear infinite;
   color: blue;
@@ -717,8 +702,7 @@ header ul li:hover a::before {
   right: 0;
   width: 500px;
   height: 113%;
-  background-color: rgba(0, 0, 0, 0.02);
-
+  background-color: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(230, 230, 230, 0.25);
   border-top: 3px solid rgba(255, 255, 255, 0.5);
   border-left: 3px solid rgba(255, 255, 255, 0.5);
@@ -825,8 +809,8 @@ header ul li:hover a::before {
   padding: 0;
   height: 100vh;
   width: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 5) 44%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(var(--Putih-color),
+      rgba(240, 240, 240, 0.4), #D2D0D3);
 }
 
 .Cov1st_Prestasi {
@@ -872,7 +856,7 @@ header ul li:hover a::before {
   position: absolute;
   top: 7px;
   left: 7px;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(255, 255, 255, 0.5);
   color: black;
   backdrop-filter: blur(390px);
   height: calc(100% - 14px);
@@ -886,10 +870,14 @@ header ul li:hover a::before {
   transition: 0.1s ease-in-out;
 }
 
+.pre_cover .pre_card .imgbox:nth-child(1) {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .pre_cover .pre_card .imgbox .fa {
   position: absolute;
   margin: -11% 0 0 0;
-  font-size: 60px;
+  font-size: 70px;
   max-width: 100px;
   filter: invert(1);
   transition: 0.1s ease-in-out;
@@ -969,20 +957,6 @@ header ul li:hover a::before {
   margin-top: 10px;
 }
 
-
-
-/**********  PEMBATAS **********/
-/**********  Bag. Penghargaan  **********/
-
-.Penghargaan {
-  height: 100vh;
-  width: 100%;
-  padding-top: 5%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 /**********  PEMBATAS  **********/
 /**********  CSS DLL  **********/
 /* MENU ABOUT YANG TERPILIH */
@@ -1018,6 +992,111 @@ header ul li:hover a::before {
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  padding-top: 3.5%;
+  background-color: #D2D0D3;
+}
 
+.RowPort {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Col-PortA */
+.Col-PortA {
+  width: 50%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(190, 190, 190, 0.3);
+  right: 10px;
+  padding: 10px;
+  color: rgb(131, 131, 131) !important;
+  size: 50px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgb(0, 0, 0) !important;
+  background-size: 60px !important;
+}
+
+.mySwiper2 {
+  height: 100%;
+  width: 100%;
+}
+
+/* COVER slide bawah */
+.mySwiper {
+  height: 80px;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.432);
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+/* Gambar slide utama */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1% 1%;
+}
+
+/* Gambar slide bawah */
+.mySwiper .swiper-slide {
+  opacity: 0.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-size: cover;
+  background-position: left;
+}
+
+.mySwiper .swiper-slide img {
+  width: 98%;
+  height: 98%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  background-color: rgb(107, 107, 107);
+}
+
+.targetrp {
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+  height: 150px;
+  width: 90%;
+  background-color: rgba(119, 119, 119, 0.342);
+  text-align: center;
+  justify-items: center;
+  padding: 5%;
+  font-size: 24px;
+}
+
+/*mySwiper2 */
+.mySwiper2 .numbertext {
+  color: black;
+  background-color: rgba(190, 190, 190, 0.2);
+  font-size: 12px;
+  margin: 1.5% 2.5%;
+  position: absolute;
+  left: 4.5%;
 }
