@@ -534,7 +534,8 @@ header ul li:hover a::before {
   width: 370px;
   height: 490px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.658);
+  /* background-color: rgba(255, 255, 255, 0.658); */
+  background-color: rgba(255, 255, 255, 0.09);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: calc(-15% + 10px);
   transition: all 0.2s ease-in-out;
@@ -719,6 +720,7 @@ header ul li:hover a::before {
   word-spacing: 3px;
   line-height: 2em;
   font-weight: bold;
+  margin-top: -8%;
 }
 
 /** div2  **/
@@ -843,7 +845,7 @@ header ul li:hover a::before {
 .pre_cover .pre_card {
   position: relative;
   height: 300px;
-  background-color: rgba(94, 94, 94, 0.05);
+  background-color: rgba(255, 255, 255, 0.09);
   display: flex;
   width: 75%;
   border-radius: 20px;
@@ -871,7 +873,7 @@ header ul li:hover a::before {
 }
 
 .pre_cover .pre_card .imgbox:nth-child(1) {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .pre_cover .pre_card .imgbox .fa {
@@ -1005,7 +1007,7 @@ header ul li:hover a::before {
 .Col-PortA {
   width: 50%;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.548);
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .swiper-button-next,
@@ -1032,7 +1034,7 @@ header ul li:hover a::before {
 .mySwiper {
   height: 80px;
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.432);
+  background-color: rgba(255, 255, 255, 0.541);
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
@@ -1073,22 +1075,22 @@ header ul li:hover a::before {
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
-  background-color: rgb(107, 107, 107);
+  background-color: rgba(133, 133, 133, 0.514);
 }
 
 .targetrp {
   position: absolute;
   top: 81%;
   left: 50%;
+  height: 33%;
+  width: 97%;
   transform: translate(-50%, -50%);
-  /* display: none; */
-  height: 150px;
-  width: 90%;
   background-color: rgba(119, 119, 119, 0.342);
   text-align: center;
   justify-items: center;
   padding: 5%;
   font-size: 24px;
+  /* display: none; */
 }
 
 /*mySwiper2 */
