@@ -1,64 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/animasi.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  </head>
-
-  <!-- BODY -->
-  <body>
-    <!-- *******  MENU  ******* -->
-    <header id="header">
-      <a href="#" class="logo">ASitompul</a>    
-      <div class="sidebar" id="sidebarID">
-          <div class="titleMenu">MENU</div>
-          <ul  class="side-nav">
-            <li class="nav-item"><a href="#home"   onclick="btnmenu()" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about"  onclick="btnmenu()" class="nav-link" >About</a></li>
-            <li class="nav-item"><a href="#exper"  onclick="btnmenu()" class="nav-link" >Experience</a></li>
-            <li class="nav-item"><a href="#arch"   onclick="btnmenu()" class="nav-link" >Achievement</a></li>
-            <li class="nav-item"><a href="#porto"  onclick="btnmenu()" class="nav-link" >Portfolio</a></li>        
-          </ul>
-          <button type="button" onclick="MyFuncBtnMenu(this)" 
-          class="tooglecollapse" id="tgglBnt">
-            <span class="tgglIcon"></span>
-          </button>
-      </div>
-    </header>
-    <!-- *******  Head ******* -->  
-
-    <!-- *******  Banner ******* -->
-    <section class="banner" id="home">
-      <div class="coverbanner">
-        <div class="bannerkonten">
-          <div class="teks-1">Hallo, perkenalkan nama saya...</div>
-          <div class="teks-2">Anggi Abednego Sitompul</div>
-          <div class="teks-3">
-            dan saya merupakan
-            <span>IT Helpdesk </span>
-            <span>IT Administrator</span>
-            <span>Freelance </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ******* Akhir Banner ******* -->
-
-      <!-- **** ABOUT SIMULASI **** -->
-      <section class="About" id="about">              
+  <!-- **** ABOUT SIMULASI **** -->
+    <section class="About" id="about">              
+        <h1>TENTANG</h1>   
         <div class="HeadContainer"> 
+
             <!-- ICON -->
             <div class="Abt-Icon">
               <div class="Abt-CovIcon">
@@ -78,11 +22,12 @@
                 <br>
                 <div class="AbtContent"><p>Tentang Saya</p><br />
                   <span>
-                    Lulusan teknologi informasi tahun 2017 dengan pengalaman kerja 
-                    sebagai IT Helpdesk. <br /><br /> Keahlian problem solving yang kreatif dengan 
-                    kemampuan interpersonal yang kuat sehingga meningkatkan
-                    loyalitas pelanggan dalam transaksi.
-                </span>
+                    Keahlian IT Helpdesk dengan pengalaman 1 Tahun 8 Bulan. 
+                    Seorang problem solving yang kreatif dengan kemampuan skill
+                    kuat yang berhasil membangun program dengan pelanggan 
+                    baru dalam meningkatkan loyalitas pelanggan. <br /><br />
+                    Berkeinginan meningkatkan pengetahuan dalam Dunia 
+                    Teknologi.</span>
                 </div>               
               </div>
               <div class="panduan"> Tentang saya<br><p>Hover Me...</p>
@@ -123,7 +68,7 @@
                         &nbsp&nbsp&nbsp&nbspMedan Tenggara, Kec. Medan Denai,<br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         &ensp;&nbsp&nbspKota Medan, Sumatera Utara<br>
-                        No.Seluler&ensp;&ensp;&ensp;&ensp; : (+62) 813-2338-0080<br>
+                        No.Seluler&ensp;&ensp;&ensp;&ensp; : (+62)813-233-800-80<br>
                         Email&ensp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : abedsitompul@gmail.com<br>
                         Tanggal Lahir&ensp;: 15 November 1992 (28 Tahun)<br>
                         Jenis Kelamin&nbsp: Laki-laki
@@ -322,7 +267,9 @@
     <!-- ******* Akhir ABOUT  ******* -->
 
     <!-- ******* Experience ******* -->
-    <section class="Experience" id="exper">          
+    <section class="Experience" id="exper">      
+    <h1>PENGALAMAN</h1>    
+    
     <div class="CoverExper">        
       <div class="ExperImg"></div>  
       <ul>
@@ -398,7 +345,9 @@
 
     <!-- ******* PRESTASI ******* -->
     <section class="Prestasi" id="arch">  
+      <h5>PRESTASI</h5>
       <div class="Cov1st_Prestasi">
+
         <!-- KONTEN 1 -->
         <div class="pre_cover One1st">
           <div class="pre_card">
@@ -454,7 +403,9 @@
 
     <!-- ******* PORTOFOLIO ******* -->
     <section class="PORTOFOLIO" id="porto">
-          <div class="RowPort">
+      <h1>PORTOFOLIO</h1>
+      <!-- RowPort-->
+        <div class="RowPort">
           <div class="Col-PortA">
             <!-- swiper-container 1 -->
               <div class="swiper-container mySwiper2">
@@ -462,49 +413,43 @@
                   <div class="swiper-slide" target="1">
                     <div class="numbertext">1 / 8 </div>
                     <img src="img/Background/G_App/login.jpg" />
-                    <p class="targetrp">Tampilan login</p>
+                    <p class="targetrp">gaambar login ini</p>
                   </div>
                   <div class="swiper-slide" target="2">
                     <div class="numbertext">2 / 8</div>      
                     <img src="img/Background/G_App/V_user.jpg" />
-                    <p class="targetrp"> Tampilan Login User</p>
+                    <p class="targetrp"> Tampilan Login untuk User</p>
                   </div>
                   <div class="swiper-slide" target="3">
                     <div class="numbertext">3 / 8 </div>  
                     <img src="img/Background/G_App/New folder/LgnAdmin.jpg" />
-                    <p class="targetrp"> Tampilan Login Admin</p>                  
+                    <p class="targetrp"> Tampilan Login untuk Admin</p>                  
                   </div>
                   <div class="swiper-slide" target="4">
                     <div class="numbertext">4 / 8</div>
                     <img src="img/Background/G_App/New folder/PageData.jpg" />
-                    <p class="targetrp"> Tampilan Menu Data <br>
-                      dengan fungsi mengelola data user</p>
+                    <p class="targetrp"> Tampilan Data untuk fungsi pengelolaan data</p>
+                    <div class="targetrp"> <p></p> </div>
                   </div>
                   <div class="swiper-slide" target="5">
                     <div class="numbertext">5 / 8</div>
                     <img src="img/Background/G_App/New folder/PageTouch.jpg" />
-                    <p class="targetrp"> Tampilan Menu Touch <br> 
-                      Digunakan untuk melakukan broadcast ke user melalui Nomor yang terhubung dengan Whatsapp </p>
+                    <p class="targetrp"> Tampilan Touch untuk fungsi pengelolaan data</p>                  
                   </div>
                   <div class="swiper-slide" target="6">
                     <div class="numbertext">6 / 8</div>
                     <img src="img/Background/G_App/New folder/DataReportAll.jpg" />
-                    <p class="targetrp"> Tampilan Menu Detail sub Report All <br> 
-                      Menampilkan data-data user :<br> 
-                      User Aktif ataupun Non-Aktif dalam bertransaksi, Saldo User, Tanggal user mendaftar<br>
-                    </p>
+                    <p class="targetrp"> Tampilan Detail untuk fungsi pengelolaan data </p>                    
                   </div>
                   <div class="swiper-slide" target="7">
                     <div class="numbertext">7 / 8</div>
                     <img src="img/Background/G_App/New folder/DRProsesFU.jpg" />
-                    <p class="targetrp">Tampilan Menu Detail sub Report FU <br> 
-                      Menampilkan hasil broadcast dengan feedback dari pihak User</p>
+                    <p class="targetrp"> Tampilan Report All untuk fungsi pengelolaan data </p>                    
                   </div>
                   <div class="swiper-slide" target="8">
                     <div class="numbertext">8 / 8</div>
                     <img src="img/Background/G_App/New folder/DTProsesFu.jpg" />
-                    <p class="targetrp"> Tampilan Menu Touch <br>
-                      Menampilkan cara dalam melakukan broadcast ke user</p>                    
+                    <p class="targetrp"> Tampilan Touch dalam broadcast ke pihak mitra </p>                    
                   </div>
                 </div>
                 <!-- BUTTON NEXT PREV -->
@@ -551,14 +496,3 @@
         <!-- Akhiran swiper-container 2 -->
     </section>
     <!-- ******* Akhir PORTOFOLIO ******* -->
-    <!-- ******* javascript ********* -->
-    <script src="js/main.js"></script>
-  </body>
-</html>
-
-
-<!-- LOKASI C:\Users\Sitompul\Desktop\Cv_Abed -->
-<!--Link url : abedsitompul.github.io -->
-<!-- git add . -->
-<!-- git commit -m 'komentar' -->
-<!-- https://abedsitompul.github.io/ -->

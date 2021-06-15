@@ -1,3 +1,15 @@
+/* Package Sticky */
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  
+});
+$("figure").mouseleave(function () {
+  $(this).removeClass("hover");
+});
+/* Akhiran Sticky  swiper-button-prev*/
+
+
 /* About Image */
 const Abtgmbr = document.getElementById("ImgKlik");
 Abtgmbr.onclick = function () {
@@ -58,15 +70,7 @@ function FungsiReadMore() {
   }
 }
 
-/* Package Sticky */
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
-$("figure").mouseleave(function () {
-  $(this).removeClass("hover");
-});
-/* Akhiran Sticky  swiper-button-prev*/
+
 
 /* SLide image */
 var swiper = new Swiper(".mySwiper", {
