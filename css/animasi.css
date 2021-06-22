@@ -1054,7 +1054,7 @@ header ul li:hover a::before {
 /* *********************************** */
 /* MEDIA ONLY SCREEN 120px  - 770px  */
 /* *********************************** */
-@media only screen and (min-width : 120px) and (max-width: 1300px) {
+@media only screen and (min-width : 120px) and (max-width: 770px) {
 
   header,
   .About,
@@ -1066,50 +1066,76 @@ header ul li:hover a::before {
   }
 
   .banner::after {
-    background: white;
-    content: "Maintenance Max 1300px";
-    font-size: 80px;
+    position: absolute;
+    content: "Sorry, Still under maintenance";
+    font-size: 40px;
     font-weight: bold;
     position: absolute;
-    margin: calc(1% + 100px);
+    margin: calc(15% + 50px);
+    margin-left: calc(2% + 1px);
   }
 
 }
 
-@media only screen and (min-width : 1301px) and (max-width: 1600px) {
-  .banner .coverbanner {
-    position: relative;
-    margin-left: 5%;
-    text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+@media only screen and (min-width : 771px) and (max-width: 1300px) {
+
+  header,
+  .About,
+  .Experience,
+  .Prestasi,
+  .PORTOFOLIO,
+  .bannerkonten {
+    display: none;
+  }
+
+  .banner::after {
+    content: "Sorry, Still under maintenance ";
+    font-size: 70px;
+    font-weight: bold;
+    position: fixed;
+    margin: calc(10% + 10px);
+    margin-left: calc(2% + 1px);
+  }
+
+  .banner {
     width: 100%;
   }
 
-  .banner .coverbanner .teks-1 {
-    font-size: 40px;
+
+  @media only screen and (min-width : 1301px) and (max-width: 1600px) {
+    .banner .coverbanner {
+      position: relative;
+      margin-left: 5%;
+      text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+      width: 100%;
+    }
+
+    .banner .coverbanner .teks-1 {
+      font-size: 40px;
+    }
+
+    .banner .coverbanner .teks-2 {
+      margin-bottom: 1%;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .banner .coverbanner .teks-3 {
+      margin-bottom: 5%;
+      font-size: 40px;
+    }
+
+    .banner .coverbanner .bannerkonten .teks-3 span {
+      font-weight: bold;
+      font-size: 40px;
+      display: inline-block;
+      position: absolute;
+      left: 33%;
+    }
   }
 
-  .banner .coverbanner .teks-2 {
-    margin-bottom: 1%;
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  .banner .coverbanner .teks-3 {
-    margin-bottom: 5%;
-    font-size: 40px;
-  }
-
-  .banner .coverbanner .bannerkonten .teks-3 span {
-    font-weight: bold;
-    font-size: 40px;
-    display: inline-block;
-    position: absolute;
-    left: 33%;
-  }
-}
-
-/* DUPLIKAT  */
-/*
+  /* DUPLIKAT  */
+  /*
 @media only screen and (min-width : 120px) and (max-width: 770px) {
   * {
     margin: 0px;
@@ -1141,7 +1167,7 @@ header ul li:hover a::before {
   }
 
 /* background menunya */
-/* 
+  /* 
 .sidebar {
   position: fixed;
   right: -150px;
@@ -1171,7 +1197,7 @@ header.sticky {
 }
 
 /* menu-menu nya */
-/*
+  /*
 .nav-item .nav-link {
   text-decoration: none;
   float: left;
@@ -1197,7 +1223,7 @@ header.sticky {
 }
 
 /* Garis dalam Kotak Menu */
-/*
+  /*
 .tgglIcon,
 .tgglIcon::before,
 .tgglIcon::after {
@@ -1242,7 +1268,7 @@ header.sticky {
 }
 
 /* BANNER */
-/*
+  /*
 .banner .coverbanner {
   position: relative;
   margin: 30% 0 auto -5%;
@@ -1274,7 +1300,7 @@ header.sticky {
 }
 
 /* about 420 */
-/*
+  /*
 .About {
   margin: 0;
   padding: 0;
@@ -1285,11 +1311,11 @@ header.sticky {
 }
 
 /* akhiran size 420 */
-/*
+  /*
 }
 
 */
-/*
+  /*
 @media only screen and (min-width : 771px) and (max-width: 1300px) {
   * {
     margin: 0px;
