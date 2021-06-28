@@ -40,7 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 100px;
+  padding: 6px 40px;
   z-index: 1000;
   transition: 0.6s;
 }
@@ -79,7 +79,7 @@ header ul li {
 /* Bag. Tombol-tombol Menu */
 header ul li a {
   position: relative;
-  margin: 0 15px;
+  margin: 0 13px;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -125,17 +125,14 @@ header ul li:hover a::before {
   text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
 }
 
-.banner .coverbanner .teks-1 {
+.banner .coverbanner .teks-1,
+.banner .coverbanner .teks-3 {
   font-size: 35px;
 }
 
 .banner .coverbanner .teks-2 {
   font-size: 55px;
   font-weight: bold;
-}
-
-.banner .coverbanner .teks-3 {
-  font-size: 35px;
 }
 
 /* Bagian Animasi bannerkonten */
@@ -190,7 +187,6 @@ header ul li:hover a::before {
 }
 
 /**** Akhiran Animasi bannerkonten */
-
 
 
 /**********  Bag. Experience  **********/
@@ -280,7 +276,6 @@ header ul li:hover a::before {
   clear: both;
 }
 
-/*  */
 .KontenExper {
   letter-spacing: 1px;
   line-height: 22px;
@@ -398,8 +393,8 @@ header ul li:hover a::before {
 /*--- Kolom Abt-Icon  **********/
 .Abt-Icon {
   float: left;
-  width: 6%;
-  padding-top: 18%;
+  width: 10%;
+  padding: 1px;
 }
 
 .Abt-CovIcon {
@@ -410,6 +405,7 @@ header ul li:hover a::before {
   z-index: 2;
   overflow: hidden;
   width: 60px;
+  padding-top: 250px;
 }
 
 .Abt-CovIcon a {
@@ -427,24 +423,7 @@ header ul li:hover a::before {
 }
 
 .Abt-CovIcon a:hover {
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
-
-.Abt-CovIcon a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.5);
-  transform: skewX(45deg) translateX(150px);
-  transition: 0.5s;
-}
-
-.Abt-CovIcon a:hover::before {
-  transform: skewX(45deg) translateX(-150px);
+  color: blue;
 }
 
 .facebook {
@@ -457,10 +436,16 @@ header ul li:hover a::before {
   color: white;
 }
 
+.dwnload {
+  background: #007bb5;
+  color: white;
+}
+
 .AbtTentang {
   float: left;
-  width: 38%;
+  width: 32%;
   height: 300px;
+  margin-left: 1%;
   padding-top: 8%;
   transition: all 0.3s ease-out;
 }
@@ -477,7 +462,7 @@ header ul li:hover a::before {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-.AbtTentang-Cover:hover {
+.AbtTentang-Cover {
   width: 370px;
   height: 490px;
   border-radius: 5px;
@@ -496,7 +481,7 @@ header ul li:hover a::before {
   width: 190px;
   border: 1px solid #fff;
   object-fit: cover;
-  margin: 12px auto;
+  margin: 20px auto;
   transition: all 0.3s ease;
 }
 
@@ -525,26 +510,6 @@ header ul li:hover a::before {
 .AbtContent span {
   font-size: var(--Ukuran3-size);
   line-height: 25px;
-}
-
-.panduan {
-  font-weight: bold;
-  padding-left: 38%;
-  padding-top: 2%;
-  font-size: 20px;
-}
-
-.panduan p {
-  padding-top: 1.5%;
-  font-size: 54%;
-  padding-left: 21%;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-}
-
-.AbtTentang-Cover:hover+.panduan,
-.AbtTentang-Konteks img.active+.panduan {
-  display: none;
 }
 
 
@@ -590,7 +555,6 @@ header ul li:hover a::before {
 /* ICON nya */
 .thumb .iconify {
   font-size: 30px;
-
 }
 
 .thumb li::after {
@@ -606,8 +570,7 @@ header ul li:hover a::before {
   width: 101%;
   height: 101%;
   transform: scale(1.02);
-  background: linear-gradient(45deg, #0f43f09d, #00f0f0, #0f43f09d,
-      #00f0f0, #0f43f09d);
+  background: linear-gradient(45deg, #0f43f09d, #00f0f0, #0f43f09d);
   border-radius: 15%;
   background-size: 400%;
   transition: 1s;
@@ -901,32 +864,7 @@ header ul li:hover a::before {
 }
 
 /**********  PEMBATAS  **********/
-/**********  CSS DLL  **********/
-/* MENU ABOUT YANG TERPILIH */
-.terpilih {
-  color: rgb(34, 0, 255);
-}
 
-.targetss {
-  position: absolute;
-  margin: 75% 4%;
-  font-size: 15px;
-  width: 80%;
-  display: none;
-  font-weight: bold;
-}
-
-.targetss p:nth-last-child(2) {
-  float: right;
-  margin-top: -25px;
-}
-
-.skill_levelss {
-  margin-top: 1%;
-  background: blue;
-  width: 100%;
-  height: 5px;
-}
 
 /* ---------  Pembatas Bagian --------- */
 /********** Bag PORTOFOLIO **********/
@@ -936,6 +874,8 @@ header ul li:hover a::before {
   box-sizing: border-box;
   position: relative;
   background-color: #D2D0D3;
+  height: 100vh;
+  padding-top: 3%;
 }
 
 .RowPort {
@@ -1051,9 +991,124 @@ header ul li:hover a::before {
   display: none;
 }
 
-/* *********************************** */
-/* MEDIA ONLY SCREEN 120px  - 770px  */
-/* *********************************** */
+
+/**********  CSS DLL  **********/
+/* MENU ABOUT YANG TERPILIH */
+.terpilih {
+  color: rgb(34, 0, 255);
+}
+
+.targetss {
+  position: absolute;
+  margin: 75% 4%;
+  font-size: 15px;
+  width: 80%;
+  display: none;
+  font-weight: bold;
+}
+
+.targetss p:nth-last-child(2) {
+  float: right;
+  margin-top: -25px;
+}
+
+.skill_levelss {
+  margin-top: 1%;
+  background: blue;
+  width: 100%;
+  height: 5px;
+}
+
+/* Form Pop Up */
+.Kontaksaya {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  position: fixed;
+  padding: 1px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.Kontaksaya .fa {
+  font-size: 80px;
+  margin: -10px;
+}
+
+.Kontaksaya:hover {
+  color: red;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 99999;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]:hover {
+  background-color: #1d6921;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.form-container .cancel {
+  position: absolute;
+  padding: 0 260px;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+}
+
+.form-container .cancel:hover {
+  color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.Kontaksaya:hover {
+  opacity: 1;
+}
+
+/* *************************************************************************************** */
+/* MEDIA ONLY SCREEN 120px - 770px  */
 @media only screen and (min-width : 120px) and (max-width: 770px) {
 
   header,
@@ -1074,9 +1129,10 @@ header ul li:hover a::before {
     margin: calc(15% + 50px);
     margin-left: calc(2% + 1px);
   }
-
 }
 
+/* *************************************************************************************** */
+/* MEDIA ONLY SCREEN 771px - 1300px  */
 @media only screen and (min-width : 771px) and (max-width: 1300px) {
 
   header,
@@ -1100,42 +1156,63 @@ header ul li:hover a::before {
   .banner {
     width: 100%;
   }
+}
 
+/* *************************************************************************************** */
+/* MEDIA ONLY SCREEN 1301px - 1350px  */
+@media only screen and (min-width : 1301px) and (max-width: 1350px) {
 
-  @media only screen and (min-width : 1301px) and (max-width: 1600px) {
-    .banner .coverbanner {
-      position: relative;
-      margin-left: 5%;
-      text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
-      width: 100%;
-    }
-
-    .banner .coverbanner .teks-1 {
-      font-size: 40px;
-    }
-
-    .banner .coverbanner .teks-2 {
-      margin-bottom: 1%;
-      font-size: 50px;
-      font-weight: bold;
-    }
-
-    .banner .coverbanner .teks-3 {
-      margin-bottom: 5%;
-      font-size: 40px;
-    }
-
-    .banner .coverbanner .bannerkonten .teks-3 span {
-      font-weight: bold;
-      font-size: 40px;
-      display: inline-block;
-      position: absolute;
-      left: 33%;
-    }
+  .banner .coverbanner {
+    position: relative;
+    margin-left: 5%;
+    text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+    width: 100%;
   }
 
-  /* DUPLIKAT  */
-  /*
+  .banner .coverbanner .teks-1 {
+    font-size: 40px;
+  }
+
+  .banner .coverbanner .teks-2 {
+    margin-bottom: 1%;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .banner .coverbanner .teks-3 {
+    margin-bottom: 5%;
+    font-size: 40px;
+  }
+
+  .banner .coverbanner .bannerkonten .teks-3 span {
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 33%;
+  }
+
+  .Prestasi {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .One1st {
+    margin: 110px 5%;
+  }
+
+  .One2st {
+    margin: 110px 2% 0 0;
+  }
+
+  .PORTOFOLIO {
+    height: 100%;
+  }
+}
+
+/* DUPLIKAT  */
+/*
 @media only screen and (min-width : 120px) and (max-width: 770px) {
   * {
     margin: 0px;
@@ -1167,7 +1244,7 @@ header ul li:hover a::before {
   }
 
 /* background menunya */
-  /* 
+/* 
 .sidebar {
   position: fixed;
   right: -150px;
@@ -1197,7 +1274,7 @@ header.sticky {
 }
 
 /* menu-menu nya */
-  /*
+/*
 .nav-item .nav-link {
   text-decoration: none;
   float: left;
@@ -1223,7 +1300,7 @@ header.sticky {
 }
 
 /* Garis dalam Kotak Menu */
-  /*
+/*
 .tgglIcon,
 .tgglIcon::before,
 .tgglIcon::after {
@@ -1268,7 +1345,7 @@ header.sticky {
 }
 
 /* BANNER */
-  /*
+/*
 .banner .coverbanner {
   position: relative;
   margin: 30% 0 auto -5%;
@@ -1300,7 +1377,7 @@ header.sticky {
 }
 
 /* about 420 */
-  /*
+/*
 .About {
   margin: 0;
   padding: 0;
@@ -1311,11 +1388,11 @@ header.sticky {
 }
 
 /* akhiran size 420 */
-  /*
+/*
 }
 
 */
-  /*
+/*
 @media only screen and (min-width : 771px) and (max-width: 1300px) {
   * {
     margin: 0px;

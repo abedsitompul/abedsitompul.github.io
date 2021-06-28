@@ -1,3 +1,5 @@
+
+
 /* Package Sticky */
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
@@ -16,8 +18,8 @@ Abtgmbr.onclick = function () {
   this.classList.toggle("active");
 };
 
-
 $(document).ready(function () {
+
   // Ubah Color Menu About
   $('ul.thumb li').click(function (e) {
     e.preventDefault();
@@ -51,7 +53,6 @@ $(document).ready(function () {
   });
 });
 
-
 /* Read More */
 function FungsiReadMore() {
   var TTersambung = document.getElementById("TeksPutus");
@@ -62,15 +63,13 @@ function FungsiReadMore() {
   if (TTersambung.style.display === "none") {
     TTersambung.style.display = "inline";
     Tsambung.style.display = "none";
-    BtnSambung.innerHTML = "Read More";
+    BtnSambung.innerHTML = "Selanjutnya..";
   } else {
     TTersambung.style.display = "none";
     Tsambung.style.display = "inline";
-    BtnSambung.innerHTML = "Read Less";
+    BtnSambung.innerHTML = "Sedikit..";
   }
 }
-
-
 
 /* SLide image */
 var swiper = new Swiper(".mySwiper", {
@@ -94,4 +93,14 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+// Option 2 : agar tidak bisa F5 refresh
+// function onFormsubmit(form){
+//   var data = {
+//     "name":form.name.value
+//   };
+//   var jsonData = JSON.stringify(data);
 
+//   document.cookie = "my_form=" + jsonData;
+//   window.location.href = form.getAttribute("action");
+//   return false;
+// }

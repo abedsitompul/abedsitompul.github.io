@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- meta  -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- tittle -->
     <title>Resume</title>
+    <!-- Link  -->    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="css/animasi.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+    <!-- script  -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+  
   </head>
 
   <!-- BODY -->
   <body>
-    <!-- *******  MENU  ******* -->
+        <!-- *******  MENU  ******* -->
     <header id="header">
       <a href="#" class="logo">ASitompul</a>    
       <div class="sidebar" id="sidebarID">
           <div class="titleMenu">MENU</div>
           <ul  class="side-nav">
-            <li class="nav-item"><a href="#home"   onclick="btnmenu()" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about"  onclick="btnmenu()" class="nav-link" >About</a></li>
-            <li class="nav-item"><a href="#exper"  onclick="btnmenu()" class="nav-link" >Experience</a></li>
-            <li class="nav-item"><a href="#arch"   onclick="btnmenu()" class="nav-link" >Achievement</a></li>
-            <li class="nav-item"><a href="#porto"  onclick="btnmenu()" class="nav-link" >Portfolio</a></li>        
+            <li class="nav-item"> <a href="#home"  onclick="btnmenu()" class="nav-link active">Home</a></li>
+            <li class="nav-item"> <a href="#about" onclick="btnmenu()" class="nav-link" >About</a></li>
+            <li class="nav-item"> <a href="#exper" onclick="btnmenu()" class="nav-link" >Experience</a></li>
+            <li class="nav-item"> <a href="#pst"   onclick="btnmenu()" class="nav-link" >Achievement</a></li>
+            <li class="nav-item"> <a href="#porto" onclick="btnmenu()" class="nav-link" >Portfolio</a></li>           
           </ul>
           <button type="button" onclick="MyFuncBtnMenu(this)" 
           class="tooglecollapse" id="tgglBnt">
@@ -63,7 +69,8 @@
             <div class="Abt-Icon">
               <div class="Abt-CovIcon">
                 <a href="https://www.facebook.com/AbedNgSitompul/" class="facebook"><i class="fa fa-facebook"></i></a> 
-                <a href="https://www.linkedin.com/in/abednegositompul" class="linkedin"><i class="fa fa-linkedin"></i></a>        
+                <a href="https://www.linkedin.com/in/abednegositompul" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+                <a href="https://drive.google.com/u/0/uc?id=1ZIZmWO14JrlqzvLkuL141pj_R49SV10V&export=download" download class="dwnload"><i class="fa fa-download"></i></a>
               </div>
             </div>
 
@@ -76,7 +83,7 @@
                     <div class="Abtplace">IT Helpdesk</div>
                 </div>
                 <br>
-                <div class="AbtContent"><p>Tentang Saya</p><br />
+                <div class="AbtContent">
                   <span>
                     Lulusan teknologi informasi tahun 2017 dengan pengalaman kerja 
                     sebagai IT Helpdesk. <br /><br /> Keahlian problem solving yang kreatif dengan 
@@ -85,8 +92,7 @@
                 </span>
                 </div>               
               </div>
-              <div class="panduan"> Tentang saya<br><p>Hover Me...</p>
-              </div>            
+                      
           </div> 
 
             <!-- Profil -->
@@ -361,7 +367,7 @@
                 </span>
               </div>
             </p>
-            <button onclick="FungsiReadMore()" id="BtnSambung"> Read More </button>
+            <button onclick="FungsiReadMore()" id="BtnSambung"> Selanjutnya.. </button>
           </div>
           <div class="WaktuExper">
             <h4>Feb 2019 - Nov 2020</h4>
@@ -397,7 +403,7 @@
     <!-- ******* Akhiran EXPERIENCE ******* -->
 
     <!-- ******* PRESTASI ******* -->
-    <section class="Prestasi" id="arch">  
+    <section class="Prestasi" id="pst">  
       <div class="Cov1st_Prestasi">
         <!-- KONTEN 1 -->
         <div class="pre_cover One1st">
@@ -551,6 +557,7 @@
         <!-- Akhiran swiper-container 2 -->
     </section>
     <!-- ******* Akhir PORTOFOLIO ******* -->
+
     <!-- ******* javascript ********* -->
     <script src="js/main.js"></script>
   </body>
